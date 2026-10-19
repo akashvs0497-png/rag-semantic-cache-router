@@ -1,0 +1,9 @@
+EMBED_MODEL = "all-MiniLM-L6-v2"
+SMALL_MODEL = "llama3.2:3b"
+LARGE_MODEL = "llama3.1:8b"
+VERIFIER_MODEL = LARGE_MODEL
+CHROMA_PATH = "./chroma_db"
+DATA_DIR = "./data"
+TOP_K = 4
+CACHE_THRESHOLD = 0.80   # candidate threshold; below the fast path, the verifier decides
+FAST_PATH = 0.97         # at or above this, serve from cache without verifying
